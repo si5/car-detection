@@ -1,0 +1,26 @@
+body{
+    background-color: paleturquoise;
+    font-family: sans-serif;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: medium;
+    background-color: royalblue;
+    border-color: black;
+    color: white;
+    border-radius: 8px;
+    margin:20px
+}
+
+@media(min-width:801px){
+    .sample{
+            display:flex;
+            justify-content: space-around;
+    }
+}

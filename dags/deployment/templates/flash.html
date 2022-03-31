@@ -1,0 +1,14 @@
+<!doctype html>
+<title>flash message</title>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul class=flashes>
+  {% for message in messages %}
+  <span style="color: red">
+    <li>{{ message }}</li>
+  </span>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+{% block body %}{% endblock %}

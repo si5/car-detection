@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>The result of inference</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+
+<body>
+    <h1>The result of inference</h1>
+    <img src="{{ url_for('path_image', dir=dir, file=file) }}" width="600">
+
+    <form action="{{ url_for('root') }}" method="get">
+        <input type="submit" value="Home" class="btn">
+    </form>
+</body>
+
+</html>
